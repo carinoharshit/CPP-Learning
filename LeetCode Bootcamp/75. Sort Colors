@@ -1,0 +1,26 @@
+// https://leetcode.com/problems/sort-colors/
+
+class Solution {
+public:
+    void sortColors(vector<int>& nums) {
+        int low=0,high=nums.size()-1;
+        
+        for(int i=low;i<=high;)              //U CAN USE WHILE TOO :)
+        {
+            if(nums[i]==2)
+            {
+                swap(nums[i],nums[high]);
+                high--;       //DECREMENT HIGH AS ELEMENT AT HIGH IS NOW AT ITS CORRECT POSITION
+            }
+        
+            else if(nums[i]==0)
+            {
+                swap(nums[i],nums[low]);
+                i++;low++;    //INCREMENT LOW AS ELEMENT AT LOW IS NOW AT ITS CORRRECT POSITION
+            }
+            
+            else
+                i++;          //OTHERWISE GO ON, NO PROBLEM (SORTING 0 AND 2 WILL EVENTUALLY SORT 1)
+        }
+    }
+};
