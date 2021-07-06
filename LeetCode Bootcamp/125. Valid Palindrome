@@ -1,0 +1,46 @@
+// https://leetcode.com/problems/valid-palindrome/
+
+class Solution {
+public:
+    bool isPalindrome(string s) {
+        transform(s.begin(),s.end(),s.begin(),::tolower);
+        int i=0,j=s.length()-1;
+        while(i<=j)
+        {
+            if(!isalnum(s[i]))
+            {
+                i++;
+            }
+            else if(!isalnum(s[j]))
+            {
+                j--;
+            }
+            else if(s[i]!=s[j])
+            {
+                return false;
+            }
+            else
+            {
+                i++;
+                j--;
+            }
+        }
+        return true;
+    }
+};
+
+
+
+/* Use of Transform (STL Library)
+For UNARY OPERATIONS
+transform(Iterator inputBegin, Iterator inputEnd, 
+         Iterator OutputBegin, unary_operation) 
+
+For BINARY OPERATIONS
+transform(Iterator inputBegin1, Iterator inputEnd1, 
+         Iterator inputBegin2, Iterator OutputBegin, 
+         binary_operation) 
+
+::tolower  ->  converts a uppercase alphabet to an lowercase alphabet...
+
+*/
