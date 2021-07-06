@@ -1,0 +1,29 @@
+// https://leetcode.com/problems/reverse-words-in-a-string/
+
+class Solution {
+public:
+    string reverseWords(string s) {
+        int i=s.size()-1;
+        string ans;
+        
+        while(i>=0){                   //traverse the string from left
+            while(i>=0 && s[i]==' ')
+                i--;                   //if spaces are encountered we just ignore them
+            
+            int j=i;
+            
+            if(i<0)
+                break;                 // this is when given string starts with spaces
+            
+            while(i>=0 && s[i]!=' ')
+                i--;                   //traverse untill we found a coomplete word
+        
+        if(ans.empty())                //if the ans is empty that is if the word we found is the first word append as it is
+            ans=ans.append(s.substr(i+1,j-i));
+        
+        else
+            ans=ans.append(" "+s.substr(i+1,j-i));   //else append with a preceding space
+        }
+    return ans;
+    }
+};
