@@ -1,0 +1,31 @@
+// https://leetcode.com/problems/plus-one/
+
+class Solution {
+public:
+    vector<int> plusOne(vector<int>& digits) {
+        if(digits[0] == 0 || digits.size() == 0){
+            return {1};
+        }
+        
+        int i = digits.size()-1;
+        int carry = 1;
+        while(carry && i != -1){
+           if(digits[i] == 9){
+               digits[i] = 0;
+               carry = 1;
+           }
+            else{
+               digits[i]++;
+               carry = 0;
+           }
+            
+            cout<<carry<<" ";
+            i--;
+        }
+        
+        if(carry){
+            digits.insert(digits.begin(),1);
+        }
+        return digits;
+    }
+};
