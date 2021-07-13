@@ -1,0 +1,17 @@
+// https://leetcode.com/problems/single-number/
+
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+        int ans=nums[0];
+        for(int i=1; i<nums.size();i++)
+        {
+            ans ^= nums[i];   // Using XOR ^ Operator
+        }
+        return ans;
+    }
+};
+
+// (XOR Operator)
+// - Takes two numbers as operands and does XOR on every bit of two numbers. 
+// - The result of XOR is 1 if the two bits are different.
