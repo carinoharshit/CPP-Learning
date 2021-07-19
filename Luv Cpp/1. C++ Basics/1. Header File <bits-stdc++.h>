@@ -1,4 +1,4 @@
-#include<bits/stdc++.h> // Replaced by <iostream>
+#include<bits/stdc++.h> // Replaced <iostream>
 using namespace std;
 int main()
 {
@@ -14,7 +14,7 @@ int main()
 
 
 --------------------(OUTPUT)--------------------
-Hello 16
+Hello 4
 
  
 --------------------(THEORY)--------------------
