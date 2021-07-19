@@ -1,0 +1,29 @@
+#include<bits/stdc++.h> 
+using namespace std;
+int main()
+{
+	char c = 'a';    // ascii value of 'a' is 97
+	cout << (int) c << endl;  //shows ascii value of c
+    
+    char x = 'a';
+    char y = 'c';   // ascii value of 'c' is 99
+    cout << y-x;    // 99-97
+}
+
+
+
+
+/*
+--------------------(INPUT)--------------------
+
+
+
+--------------------(OUTPUT)--------------------
+97
+2
+
+ 
+--------------------(THEORY)--------------------
+
+
+*/ 
