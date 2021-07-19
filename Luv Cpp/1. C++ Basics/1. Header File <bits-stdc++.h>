@@ -1,0 +1,25 @@
+#include<bits/stdc++.h> // Replaced by <iostream>
+using namespace std;
+int main()
+{
+	cout << "Hello ";
+	cout << sqrt(16); 
+}
+
+
+
+/*
+--------------------(INPUT)--------------------
+
+
+
+--------------------(OUTPUT)--------------------
+Hello 16
+
+ 
+--------------------(THEORY)--------------------
+- We can replace the all header files with one 
+- i.e. <bits/stdc++.h> 
+- It also contain <math.h> to implement sqrt() function
+
+*/ 
