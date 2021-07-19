@@ -1,0 +1,35 @@
+#include<bits/stdc++.h> // Replaced by <iostream>
+using namespace std;
+int main()
+{
+	// Mainly we use: char, int, float, double, bool
+	// long int, long long int
+	char c = 'a';
+	int a = 3;
+	double b = 3.5;
+	a = 4.5;   // a assigned as int value so it will print 4 only
+	bool d = true;
+	long long int l = 12345
+	cout << c << " " << a << " " << b << " " << d << endl;
+}
+
+
+
+/*
+--------------------(INPUT)--------------------
+
+
+
+--------------------(OUTPUT)--------------------
+a 4 3.5 1
+
+
+
+--------------------(THEORY)--------------------
+BOOL:
+- If bool b = true, O/P is 1
+- If bool b = false, O/P is 0
+- If bool b = 123, O/P is 1
+- If bool b = -123, O/P is 1
+- If bool b = 0, O/P is 0
+*/
