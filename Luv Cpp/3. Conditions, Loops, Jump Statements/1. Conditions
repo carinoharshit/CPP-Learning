@@ -1,0 +1,44 @@
+//  NOTE: Relational Operators used...
+//  ==  (equal to), 
+//  !=  (not equal to), 
+//  <   (less than), 
+//  >   (greater than),
+//  <=  (less than equal to),
+//  >=  (greater than equal to)
+--------------------------------------------
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int a = 2;
+    int b = 3;
+    cout << (a == b);  // these relational operators results either TRUE - '1' or FALSE - '0'
+}
+// OUTPUT: 0   // 2 is not equals to 3
+
+--------------------------------------------
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int a = 2;
+    int b = 3;
+    int c = 4;
+    cout << ((b > a) && (b > c));  // Multiple Operator AND is used. Both statement should be true
+}
+// OUTPUT: 0   // as b is not greater than c
+
+--------------------------------------------
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int a = 2;
+    int b = 3;
+    int c = 1;
+    cout << ((b > a) || (b > c));  // Multiple Operator OR is used. Any ONE statement should be true.
+}
+// OUTPUT: 1   
