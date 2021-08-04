@@ -1,0 +1,46 @@
+// NOTE:  First CALCULATION then STORE
+------------------------------------------------
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    
+    cout << 7 / 2.0; // results float value...
+}
+// OUTPUT : 3
+
+------------------------------------------------
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+
+    cout << 'c' + 1;  // results ascii value of 'c' + 1
+}
+// OUTPUT : 100
+
+------------------------------------------------
+// NOTE :  double > float > long long int > long int > int > character
+------------------------------------------------
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int a = 3/2.0;  // calculation is 1.5 but it stored in int value so it results 1
+    cout << a;
+}
+// OUTPUT : 1       // if we store in float it results 1.5
+
+------------------------------------------------
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    double a = 3/2;  // 3 & 2 both are integer and it's calculation will results integer i.e. 1, so 1 is stored in double
+    cout << a;
+}
+// OUTPUT : 1  
+
+------------------------------------------------
