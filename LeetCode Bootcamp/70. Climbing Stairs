@@ -1,0 +1,19 @@
+// https://leetcode.com/problems/climbing-stairs/
+
+class Solution {
+public:
+	void stairs_count(vector<int> &st, int stair) {
+		if (stair > 0) {
+			st[stair] = st[stair+1] + st[stair+2];
+			stairs_count(st, stair-1);
+		}
+	}
+
+    int climbStairs(int n) {
+        vector<int> st(n+1);
+        st[n] = 1; st[n-1] = 2;
+        stairs_count(st, n-2);
+    
+    return st[1];
+    }
+};
