@@ -1,0 +1,68 @@
+// RANGES IN DATATYPE rough overview
+/*-------------------------------------------------------------------------
+     (int, char, long int, long long int, float, double)
+
+    -10^9 < int < 10^9
+    -10^12 < long int < 10^12
+    -10^18 < long long int < 10^18
+    
+     NOTE:    INT_MAX < int < INT_MAX  (Form Cycle)
+/*-------------------------------------------------------------------------*/
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int a = 100000;
+    int b = 100000;
+    int c = a*b;
+    cout << c << endl;
+    int mx = INT_MAX; 
+    cout << mx;      // Shows maximum value of int
+    cout << mx+1;    // Overflow, result negative
+}
+// OUTPUT: 1410065408
+//         -2147483648 
+
+
+/*-------------------------------------------------------------------------*/
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int a = 100000;
+    int b = 100000;
+    long int c = a*b;   // long int satisfied reage here
+    cout << c << endl;
+}
+// OUTPUT: 10000000000
+
+
+/*-------------------------------------------------------------------------*/
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int a = 100000;
+    int b = 100000;
+    long int c = a*b;   // a, b are solved in integer as per "int' range, it overflow
+    cout << c << endl;
+}
+// OUTPUT: 1410065408
+
+
+/*-------------------------------------------------------------------------*/
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int a = 100000;
+    int b = 100000;
+    long int c = a * 1ll * b;  // here 1ll means to calculate a, b in long int
+    cout << c << endl;
+}
+// OUTPUT: 10000000000
+
+
+/*-------------------------------------------------------------------------*/
