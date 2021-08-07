@@ -22,15 +22,13 @@ Comma                          ,                      Right to Left
 
 #include<bits/stdc++.h>
 using namespace std;
-
 int main(){
     cout << 7 / 2 * 3 << endl;  // Solve Left to Right
     cout << 3 * 7 / 2 << endl;  // Solve Left to Right
     cout << 3 * 7 + 2 + 1 ;  // Solve Left to Right
 }
-
 // OUTPUT : 9
 //          10
 //          24
 
-------------------------------------------------
+/*------------------------------------------------*/
