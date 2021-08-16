@@ -1,0 +1,29 @@
+// https://leetcode.com/problems/range-sum-query-immutable/
+
+class NumArray {
+    vector<int> ans;
+    vector<int> num;
+public:
+    NumArray(vector<int>& nums) {
+        int sum = 0;
+        
+        for(int i=0; i<nums.size(); i++)
+        {
+            ans.push_back(sum+nums[i]);
+            sum=sum+nums[i];
+            
+            num.push_back(nums[i]);
+        }
+    }
+    
+    int sumRange(int left, int right) {
+        return ans[right]-ans[left]+num[left];
+    }
+};
+
+
+/**
+ * Your NumArray object will be instantiated and called as such:
+ * NumArray* obj = new NumArray(nums);
+ * int param_1 = obj->sumRange(left,right);
+ */
