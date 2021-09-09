@@ -22,11 +22,11 @@ int main(){
 
 /* 
 
-OUTPUT: 
+INPUT:
 3
 1 2 3
 
-INPUT:
+OUTPUT: 
 NO
 YES
 Divisible by 3
