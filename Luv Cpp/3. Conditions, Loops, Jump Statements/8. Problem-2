@@ -1,0 +1,37 @@
+// Sum of Digits...
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int t;
+    cin >> t;  // testcase
+    while(t--){
+        int n;
+        cin >> n;
+        int sum = 0;
+        while(n>0){
+            int last_digit = n % 10;
+            sum = sum + last_digit;
+            n = n / 10;
+        }
+        cout << sum << endl;
+    }
+}
+
+
+/* 
+
+INPUT:
+4 (testcases)
+88
+2345
+12345678
+56453423
+
+OUTPUT: 
+16
+14
+36
+32
+
+*/
