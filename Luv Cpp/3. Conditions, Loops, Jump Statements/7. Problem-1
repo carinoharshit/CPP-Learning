@@ -1,0 +1,31 @@
+// Take number of inputs and show output till the given number 42 (doesn't print 42)
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    while(true){
+        int n;
+        cin >> n;
+        if(n == 42){
+            break;
+        }
+        cout << n << endl;
+    }
+}
+
+
+/* 
+
+INPUT:
+2
+8
+88
+42
+24
+
+OUTPUT: 
+2
+8
+88
+
+*/
