@@ -1,0 +1,50 @@
+// 1e7 means (1 * 10^7)
+// Array Size Limit Locally  -->  1e5
+// Array Size Limit Globally  -->  1e7
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n = 1e7;  // declaring big limit locally
+    int a[n];
+    a[n-1] = 5;
+    cout << a[n-1];
+}
+
+
+/* 
+
+INPUT:
+ 
+
+OUTPUT: 
+Segmentation fault (as size limit exceeded than 1e5)
+
+*/
+
+
+//----------------------------------------------------------------
+#include<bits/stdc++.h>
+using namespace std;
+const int n = 1e7;  // declaring big limit globally
+int a[n];
+
+int main()
+{    
+    a[n-1] = 5;
+    cout << a[n-1];
+}
+
+
+/* 
+
+INPUT:
+ 
+
+OUTPUT: 
+5
+
+*/
+
