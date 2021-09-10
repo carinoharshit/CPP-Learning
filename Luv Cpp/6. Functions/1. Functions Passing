@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void printHello(){
+    cout << "Hello World" << endl;
+}
+
+sum(int a, int b){
+    int sum = a+b;
+    return sum;
+}
+
+int main(){  
+    printHello();
+    cout << "Sum is: " << sum(2,3);
+}
+
+
+/* 
+
+INPUT:
+5 6
+
+OUTPUT: 
+Hello World
+Sum is: 5
+
+*/
