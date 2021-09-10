@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    string str1;
+    getline(cin, str1);   // using string obj
+
+    char str2[100];
+    cin.get(str2, 100);   // using char array
+
+    cout << "Using String: " << str1 << endl;
+    cout << "Using Char  : " << str2;
+}
+
+
+
+/* 
+
+INPUT:
+Program is fun.
+Harshit Singh
+
+OUTPUT: 
+Using String: Program is fun.
+Using Char  : Harshit Singh
+
+*/
