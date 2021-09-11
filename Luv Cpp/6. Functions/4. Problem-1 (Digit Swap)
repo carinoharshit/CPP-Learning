@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void swapByValue(int a, int b){   // By Value...
+    int temp = a;
+    a = b;
+    b = temp;
+    cout << "By Value: " << a << ", " << b << endl;
+}
+
+void swapByReference(int &a, int &b){    // By Reference...
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+int main(){  
+    int a = 3;
+    int b = 5;
+    cout << "Entered Value: "<< a << ", " << b << endl;
+    swapByValue(a,b);
+    
+    swapByReference(a,b);
+    cout << "By Reference: " << a << ", " << b << endl;
+}
+
+
+/* 
+
+INPUT:
+
+
+OUTPUT: 
+Entered Value: 3, 5
+By Value: 5, 3
+By Reference: 5, 3
+
+*/
