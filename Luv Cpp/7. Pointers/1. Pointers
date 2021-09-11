@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+     int x = 4;
+     int *p = &x;  // storing adress of x in pointer 'p' 
+     cout << "Address of x: " << &x << endl;
+     cout << "Value of p: " << &x << endl;
+     cout << "Value of *p: " << &x << endl;
+     *p = 5;
+     cout << "Value of x: " << x << endl;
+     cout << "p + 1: " << p+1;
+}
+
+
+* 
+INPUT:
+
+
+OUTPUT: 
+Address of x: 0x61ff08
+Value of p: 0x61ff08
+Value of *p: 0x61ff08
+Value of x: 5
+p + 1: 0x61ff0c
+
+*/
