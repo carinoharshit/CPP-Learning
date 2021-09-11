@@ -1,0 +1,56 @@
+//-----------------------(Pass By Value)-----------------------
+// (must require 'return' type in function)
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int increment(int n){   // passing by value
+    n++;
+    return n;
+}
+
+int main(){  
+    int a = 3;
+    cout << "Value: " << a << endl;
+    a = increment(a);
+    cout << "Updated Value: " << a;
+}
+
+
+/* 
+
+INPUT:
+
+
+OUTPUT: 
+Value: 3
+Updated Value: 4
+
+*/
+
+
+//-----------------------(Pass By Reference)-----------------------
+// (must require 'void' type in function)
+
+#include<bits/stdc++.h>
+using namespace std;
+
+void increment(int &n){  // passing by ampersand '&'
+    n++;
+}
+
+int main(){  
+    int a = 3;
+    cout << "Value: " << a << endl;
+    increment(a);
+    cout << "Updated Value: " << a;
+}
+
+/* 
+
+INPUT:
+
+
+OUTPUT: 
+Value: 3
+Updated Value: 4
