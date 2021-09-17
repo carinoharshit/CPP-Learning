@@ -1,0 +1,29 @@
+https://www.hackerearth.com/problem/algorithm/city-tour/
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int t;
+    cin >> t;
+    while(t--){
+        int n;
+        cin >> n;
+        cout << 4*n << endl;
+    }
+}
+    
+
+
+/* 
+
+INPUT:
+2
+3
+1
+
+OUTPUT: 
+12
+4
+
+*/
