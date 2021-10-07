@@ -57,6 +57,13 @@ bool search(node* head, int key){
 }
 
 void deletion(node* &head, int val){
+    if(head==NULL){  // when 0 node
+        return;
+    }
+    if(head->next==NULL){  // when 1 node
+        deleteAtHead(head);
+        return;
+    }
     node* temp=head;
     while(temp->next->data!=val){
         temp=temp->next;   
